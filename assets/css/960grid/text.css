@@ -1,0 +1,136 @@
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	color:#0A5896;/* alter by Eduardo*/
+}
+
+a{
+	text-decoration:none;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+a:visited{
+	color:#0A5896;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size:22px;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 19px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 20px;
+}
+
+
+/*   Textos, Cores e Fontes
+-----------------------------------------------------------------------------*/
+
+h1{
+	border-bottom:1px dotted #999;	
+	padding-bottom:5px;
+	background:url(../../img/border-azul.png) no-repeat left bottom;
+}
+
+h6{
+	color:#0A5896;
+	margin:10px;
+}
+
+strong,b,label{
+	color:#0A5896;
+	}
+
+#submenu #sub ul li {
+		font-weight:bold;
+		list-style:none;
+		margin-top:5px;
+		text-shadow:1px 1px 2px #fff;
+	 behavior: url(ie-css3.htc);
+	}
+#submenu #sub ul li a{
+		color:#333;
+}
+
+#submenu #sub ul li a:hover{
+	 text-shadow:none;
+	 behavior: url(ie-css3.htc);
+}
+
+
+/*---------------------------------
+				HOME
+---------------------------------*/
+
+.album li strong{
+	font-size:11px !important;
+}

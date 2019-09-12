@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         	<title>Inova Imóveis</title>
+            <!----------------- FRAMEWORK 960GRID PARA LAYOUTS-------------------->
+    <link rel="stylesheet" type="text/css" href="Styles/960grid/960.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/960grid/reset.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/960grid/text.css" />
+    
+    <!----------------- PLUGIN SLIDESHOW -------------------->
+    <link rel="stylesheet" type="text/css" href="js/plugins/nivo-slider/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="js/plugins/nivo-slider/style.css"/>
+    
+    <!----------------- PLUGIN GALLERIFFIC -------------------->
+    <link rel="stylesheet" type="text/css" href="js/plugins/Galeria/galleriffic-2.css"/>
+    
+    <!----------------- CUSTOM THEME JQUERY -------------------->
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.8.17.custom/css/custom-theme/jquery-ui-1.8.17.custom.css"/>
+    
+    
+    <script language="javascript" src="js/jquery-1.4.3.min.js" ></script>
+    <script type="text/javascript" src="js/plugins/Galeria/jquery.galleriffic.js"></script>
+	<script type="text/javascript" src="js/plugins/Galeria/jquery.opacityrollover.js"></script>
+    <script language="javascript" src="js/jquery-ui-1.8.17.custom/js/jquery-ui-1.8.17.custom.min.js" ></script>
+    <script language="javascript" src="js/plugins/nivo-slider/jquery.nivo.slider.js" ></script>
+    <script language="javascript" src="js/plugins/jquery.corner.js" ></script>
+    <script language="javascript" src="js/scripts.js" ></script>
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        
+        	<script type="text/javascript">
+			$(document).ready(function(){
+					var geocoder;
+					var map;
+					
+					geocoder = new google.maps.Geocoder();
+					geocoder.geocode({'address': 'Rua Nortelandia, 280 , Bairro Santa Fé , Campo Grande MS'}, function(results, status) {
+					  if (status == google.maps.GeocoderStatus.OK) {
+							  latlng = results[0].geometry.location;
+							  var myOptions = {
+									zoom: 15,
+									center: latlng,
+									mapTypeId: google.maps.MapTypeId.ROADMAP
+							 }
+				  
+							  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+						  
+							  var image = 'img/icon-inova.png';
+							
+							  var beachMarker = new google.maps.Marker({
+								  position: latlng,
+								  map: map,
+								  icon: image
+							  });
+						
+					  } else {
+						alert("Geocoder failed due to: " + status);
+					  }
+					});
+			});
+    	</script>
+        
+    </head>
+    <body id="detalhes">
+        <div id="bg"></div>
+        
+        <!-- **************************  CABEÇALHO *******************************-->
+        <div id="header" class="container_12 clearfix">
+            <div class="grid_12" id="topo">
+                <div class="grid_5 alpha" id="logo">
+                    <img src="img/logo_image.jpg" width="267" height="70" alt="Inova" />
+                </div>
+                <div class="grid_7 omega" id="menutopo"> 
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">FALE CONOSCO</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+
+        <!-- **************************  CONTEUDO PRINCIPAL *******************************-->
+        <div id="content" class="container_12 clearfix">
+        
+        	<!-- Conteudo principal lado esquerdo -->
+          	<div class="grid_9" id="principal">
+            	<div class="grid_9 alpha omega">
+             		<h1>Residencial Nova Bandeirantes</h1>
+                    
+                   	<!-- Start Advanced Gallery Html Containers -->
+                    <div id="gallery" class="content">
+                    	<div class="slideshow-container">
+                        	<div id="loading" class="loader"></div>
+                            <div id="slideshow" class="slideshow"></div>
+                        </div>
+                    </div>
+                    <div id="thumbs" class="navigation">
+                    	<ul class="thumbs noscript">
+                        	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto1.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto1.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto2.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto2.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto3.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto3.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto4.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto4.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                            </li>
+                            <li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                           	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                           	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto5.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto5.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                            <li>
+                                <a class="thumb" name="leaf" href="img/fotos/casa1-foto1.jpg" title="Title #0">
+                                    <img src="img/fotos/casa1-foto1.jpg" alt="Title #0" width="80" height="65" />
+                                </a>
+                        	</li>
+                        	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto2.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto2.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                          	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto3.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto3.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                          	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto4.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto4.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                         	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto1.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto1.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto2.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto2.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                          	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto3.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto3.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+                          	<li>
+                            	<a class="thumb" name="leaf" href="img/fotos/casa1-foto4.jpg" title="Title #0">
+                                	<img src="img/fotos/casa1-foto4.jpg" alt="Title #0" width="80" height="65" />
+                            	</a>
+                        	</li>
+						</ul>
+					</div>  
+				</div>
+                <div class="grid_9 alpha omega">
+                    <div id="tabs" style="float:inherit;width:690px;">
+                        <ul>
+                            <li><a href="#tabs-1">Dados</a></li>
+                            <li><a href="#tabs-2">Descrição</a></li>
+                            <li><a href="#tabs-3">Endereço</a></li>
+                            <li><a href="#tabs-4">Observações</a></li>
+                            <li><a href="#tabs-5">Entre em contato</a></li>
+                        </ul>
+                        
+                        <div id="tabs-1">
+                            <ul>
+                                <li><b>Código do Imóvel:</b> SB0208</li>
+                                <li><b>Finalidade:</b> Compra/Venda</li>
+                                <li><b>Tipo:</b> Sobrado</li>
+                                <li><b>Área construída:</b> 300,00</li>
+                                <li><b>Valor do Imóvel:</b> R$ 750.000,00</li>
+                            </ul>
+                        </div>
+                    
+                        <div id="tabs-2">
+                            <ul id="item-descricao">
+                                <li> Rede elétrica</li>
+                                <li>Água</li> 	 	
+                                <li>Esgoto</li>
+                                <li> Asfalto</li> 	 	
+                                <li> Calçada</li>
+                                <li>Muro</li> 	 	
+                                <li> Escritorio</li>
+                                <li>Lavabo</li> 	 	
+                                <li> Cozinha planejada</li>
+                                <li>Despensa</li> 	 	
+                                <li> Quarto empregada</li>
+                                <li> Wc de serviço</li> 	 	
+                                <li> Área de serviço</li>
+                                <li> Churrasqueira</li> 	 	
+                                <li> Lavanderia</li>
+                                <li> Jardim</li> 	 	
+                                <li> Alarme</li>
+                                <li> Cerca elétrica</li> 	 	
+                                <li> Portão elétrico</li>
+                                <li> Porteiro</li> 	 	
+                                <li> 1 Sala de jantar</li>
+                                <li> 1 Sala de estar</li> 	 	
+                                <li> 1 Sala de TV</li>
+                                <li> 3 Suítes com armário</li> 	 	
+                                <li> 2 Sacadas</li>
+                                <li> 1 Varanda</li> 	 	
+                                <li> 1 Piscina</li>
+                                <li> 3 Vagas de garagem</li> 	 	
+                            </ul>
+                            <p class="clearfix"></p>
+                        </div>
+                    
+                        <div id="tabs-3">
+                            <div id="map_canvas" style="width:650px;height:300px"></div>
+                        </div>
+                    
+                        <div id="tabs-4">
+                            Mais Descrições:
+                            Belíssimo sobrado,ás margens da Lagoa Itatiaia, ótimo projeto,área de lazer completa, jardins, acabamento de muito bom gosto,completo de armários.
+                        </div>
+                    
+                        <div id="tabs-5">
+                            <form>
+                                <p>
+                                    <label>Nome:</label>
+                                    <input type="text" name="nome" />
+                                </p>
+                                <p>
+                                    <label>E-mail:</label>
+                                    <input type="text" name="email" />
+                                </p>
+                                <p>
+                                    <label>Telefone:</label>
+                                    <input type="text" name="telefone" />
+                                </p>
+                                <p>
+                                  <label>Mensagem:</label>
+                                    <textarea  name="mensagem" rows="10" ></textarea>
+                                </p>
+                                <p>
+                                    <input type="button" name="enviar" value="enviar" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+				<div class="grid_9 alpha omega"></div>
+    		</div>
+        
+        	<!-- Submenu lado direito -->
+       		<div class="grid_3" id="submenu">
+        	<div id="opacity"></div>
+            <div id="sub">
+            	
+                <h6>Busca por Imóveis</h6>
+                <ul>
+                    <li><a href="detalhes.html">Apartamentos</a></li>
+                    <li><a href="#">Casas</a></li>
+                    <li><a href="#">Sobrados</a></li>
+                    <li><a href="#">Ponto Comercial</a></li>
+                    <li><a href="#">Terrenos</a></li>
+                    <li><a href="#">Rural</a></li>
+                </ul>
+                
+                <h6>Busca por Condominios</h6>
+                <ul>
+                    <li><a href="#">Casas</a></li>
+                    <li><a href="#">Sobrados</a></li>
+                    <li><a href="#">Terrenos</a></li>
+                </ul>
+			</div>
+		</div>
+        </div>
+        
+        <!-- ************************** RODAPÉ *******************************-->
+		<div class="footer-bottom"> 
+			<div id="footer" class="container_12 clearfix" >
+				<h6 align="center">Inova Imóveis CRECI 831-J</h6>
+        		<h6 align="center">Telefones: (67) 3327-2000 8478-0180</h6>
+			</div>
+		</div>
+        
+        <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                                                    
+                        $( "#tabs" ).tabs();
+                                                    
+                        // We only want these styles applied when javascript is enabled
+                        $('div.navigation').css({'width' : '300px', 'float' : 'right'});
+                        $('div.content').css('display', 'block');
+        
+                        // Initially set opacity on thumbs and add
+                        // additional styling for hover effect on thumbs
+                        var onMouseOutOpacity = 0.67;
+                        $('#thumbs ul.thumbs li').opacityrollover({
+                            mouseOutOpacity:   onMouseOutOpacity,
+                            mouseOverOpacity:  1.0,
+                            fadeSpeed:         'fast',
+                            exemptionSelector: '.selected'
+                        });
+                        
+                        // Initialize Advanced Galleriffic Gallery
+                        var gallery = $('#thumbs').galleriffic({
+                            delay:                     2500,
+                            numThumbs:                 9,
+                            preloadAhead:              10,
+                            enableTopPager:            false,
+                            enableBottomPager:         true,
+                            maxPagesToShow:            7,
+                            imageContainerSel:         '#slideshow',
+                            loadingContainerSel:       '#loading',
+                            renderSSControls:          true,
+                            renderNavControls:         true,
+                            playLinkText:              'Play Slideshow',
+                            pauseLinkText:             'Pause Slideshow',
+                            prevLinkText:              '&lsaquo; Previous Photo',
+                            nextLinkText:              'Next Photo &rsaquo;',
+                            nextPageLinkText:          'Next &rsaquo;',
+                            prevPageLinkText:          '&lsaquo; Prev',
+                            enableHistory:             false,
+                            autoStart:                 false,
+                            syncTransitions:           true,
+                            defaultTransitionDuration: 900,
+                            onSlideChange:             function(prevIndex, nextIndex) {
+                                // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                                this.find('ul.thumbs').children()
+                                    .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                                    .eq(nextIndex).fadeTo('fast', 1.0);
+                            },
+                            onPageTransitionOut:       function(callback) {
+                                this.fadeTo('fast', 0.0, callback);
+                            },
+                            onPageTransitionIn:        function() {
+                                this.fadeTo('fast', 1.0);
+                            }
+                        });
+                        
+                        
+                         var MetadeQtdDescricao = $("#item-descricao").find('li').length/2
+                         var $lista = $("#item-descricao").find('li');
+                         var lista1 = "";	
+                         var lista2 = "";
+                         var cont = 0;
+                         
+                         $.each($lista,function(i,descricao){
+                            
+                            if(cont<=MetadeQtdDescricao)
+                            {	
+                                   lista1 += "<li>"+$(descricao).text()+"</li>";		
+                            }
+                            else{
+                                    lista2 += "<li>"+$(descricao).text()+"</li>";
+                            }	
+                            cont++;
+                         });
+                         
+                        $("#item-descricao").remove();				
+                        $("#tabs-2").html("<ul>"+lista1+"</ul><ul>"+lista2+"</ul>");
+                        $("#tabs-2 ul").css("float","left");
+                        $("#tabs-2 ul:last").css("margin-left","100px");
+                        
+                    });
+                </script>
+    </body>
+</html>
